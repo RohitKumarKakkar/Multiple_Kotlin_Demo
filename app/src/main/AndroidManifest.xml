@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kotlin.multipledemos">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LifeCycleAwareDemo">
+        <activity
+            android:name=".bindingAdapters.BindingAdaptersMain"
+            android:exported="true" />
+        <activity
+            android:name=".liveDataDataBinding.LiveDataBindingMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dataBinding.AdvanceBindingMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dataBinding.DataBindingMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".liveData.LiveDataMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".viewModel.ViewModelMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".lifeCycleAwareDemo.LifeCycleMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
